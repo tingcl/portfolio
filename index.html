@@ -20,70 +20,87 @@
 </head>
 <body>
     <header>
-        <div class="menu-hamburger">
-            <div class="menu-line half start"></div>
-            <div class="menu-line middle"></div>
-            <div class="menu-line half end"></div>
-        </div>
-        <nav class="navbar navbar-expand-lg">
-            <ul class="navbar-nav">
-                <li class="nav-item contents">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item contents">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item contents">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item contents">
-                    <a class="nav-link" href="#experience">Experience</a>
-                </li>
-                <li class="nav-item contents">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="landing-text default">
-            <h1>Jerry Lu</h1>
-            <h6>HTML / CSS / JavaScript</h6>
+        <div class="container-fluid">
+            <div class="menu-hamburger">
+                <div class="menu-line half start"></div>
+                <div class="menu-line middle"></div>
+                <div class="menu-line half end"></div>
+            </div>
+            <div class="row">
+                <nav class="navbar navbar-expand-lg">
+                    <ul class="navbar-nav">
+                        <li class="nav-item contents">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item contents">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item contents">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item contents">
+                            <a class="nav-link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item contents">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="landing-text default">
+                <h1>Jerry Lu</h1>
+                <h6>HTML / CSS / JavaScript</h6>
+            </div>
         </div>
     </header>
     <section class="about" id="about">
         <div class="container">
-            <div class="about-img">
-                <img src="assets/images/me.jpg" alt="headshot">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-6">
+                    <div class="about-title">
+                        <h1 class="title">About Me</h1>
+                    </div>
+                    <p> 
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Necessitatibus fugiat unde dolorum illo, aspernatur quaerat 
+                        adipisci laborum facilis voluptas repellendus beatae nemo doloribus 
+                        perspiciatis ipsam tempore fugit nulla mollitia! Consequatur 
+                        dolorum tempore labore rem laudantium et dolor asperiores adipisci eos!
+                    </p>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-4">
+                    <div class="about-img">
+                        <img class="profile" src="assets/images/me.jpg" alt="profile">
+                    </div>
+                </div>
             </div>
-            <div class="about-details">
-                <div class="about-head">
-                    <h1>About Me</h1>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-10">
+                    <div class="social-bar">
+                        <ul class="nav">
+                            <li class="nav-item linkedin">
+                                <a href="https://www.linkedin.com/in/tingcl/" target="_blank">
+                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item github">
+                                <a href="https://www.github.com/tingcl" target="_blank">
+                                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item twitter">
+                                <a href="https://www.twitter.com/AboLunatic" target="_blank">
+                                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <p> 
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Necessitatibus fugiat unde dolorum illo, aspernatur quaerat 
-                    adipisci laborum facilis voluptas repellendus beatae nemo doloribus 
-                    perspiciatis ipsam tempore fugit nulla mollitia! Consequatur 
-                    dolorum tempore labore rem laudantium et dolor asperiores adipisci eos!
-                </p>
-                <div class="social-bar">
-                    <ul class="nav-list">
-                        <li class="nav-option linkedin">
-                            <a href="https://www.linkedin.com/in/tingcl/" target="_blank">
-                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li class="nav-option github">
-                            <a href="https://www.github.com/tingcl" target="_blank">
-                                <i class="fa fa-github-square" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li class="nav-option twitter">
-                            <a href="https://www.twitter.com/AboLunatic" target="_blank">
-                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            </div>
+            <div class="about-body default">
             </div>
         </div>
     </section>

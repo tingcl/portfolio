@@ -72,7 +72,8 @@ li {
 }
 
 .nav-item:hover,
-.nav-item:focus {
+.nav-item:focus,
+.nav-item:active {
     background: #eee;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -83,7 +84,7 @@ li {
     border-radius: initial;
 }
 
-.nav-item.contents::after {
+.nav-item::after {
     content: '';
     display: block;
     width: 0;
@@ -91,7 +92,7 @@ li {
     transition: 500ms width ease;
 }
 
-.nav-item.contents:hover::after {
+.nav-item:hover::after {
     background: #eee;
     width: 100%;
 }
@@ -178,17 +179,31 @@ li {
     width: 100%;
 }
 
-.about-head{
-    font-size: 4rem;
+.about {
+    color: white;
+}
+
+.about-title {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.about-head h1::after {
+.about-title .title {
+    font-size: 7rem;
+}
+
+.about-title h1::after {
     content: "";
     display: block;
     width: 60%;
     height: .5rem;
     background: #eee;
     outline: 1px solid #000;
+}
+
+img.profile {
+    border-radius: 50%;
+    height: 50%;
+    width: 50%;
+    margin: 0 5rem;
 }
 

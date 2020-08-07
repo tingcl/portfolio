@@ -18,9 +18,9 @@ body {
 } 
 
 a {
+    font-family: 'Roboto', sans-serif;
     color: #eee;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
 }
 
 p {
@@ -30,6 +30,7 @@ p {
 
 img {
     width: 100%;
+    height: 100%;
 }
 
 header {
@@ -37,18 +38,24 @@ header {
     height: 100vh;
 }
 
+section {
+    padding: 5rem;
+}
+
+/* Dropdown table of contents */
+
 .default {
     font-family: 'Bitter', serif;
     color: #eee;
 }
 
 .navbar {
+    top: -100vh;
     width: 100%;
     height: 100vh;
     position: fixed;
-    top: -100vh;
     background-color: #2b5096;
-    border-radius: 100%;
+    border-radius: 50%;
     transition: 650ms all cubic-bezier(0.8, 0.05, 0.05, 1);
     z-index: 2;
 }
@@ -57,7 +64,6 @@ header {
     list-style: none;
     width: 100%;
     height: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -69,14 +75,6 @@ li {
 .nav-item {
     font-size: 4rem;
     padding: 1rem;
-}
-
-.nav-item:hover,
-.nav-item:focus,
-.nav-item:active {
-    background: #eee;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .navbar.open {
@@ -92,7 +90,15 @@ li {
     transition: 500ms width ease;
 }
 
-.nav-item:hover::after {
+.nav-item.contents:hover,
+.nav-item.contents:active  {
+    background: #eee;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-item.contents:hover::after {
     background: #eee;
     width: 100%;
 }
@@ -112,9 +118,9 @@ li {
 }
 
 .menu-line {
-    background: #eee;
     width: 100%;
     height: 5px;
+    background: #eee;
     border-radius: 2rem;
 }
 
@@ -151,6 +157,7 @@ li {
     background: #eee;
 }
 
+/* Landing page */
 
 .landing-text {
     position: absolute;
@@ -164,46 +171,80 @@ li {
 }
 
 .landing-text h1 {
-    /* font-size: 20rem; */
     font-size: 10vmax;
-    text-shadow: 5px 5px #95546a;
     width: 100%;
     padding: 1rem;
+    text-shadow: 5px 5px #95546a;
 }
 
 .landing-text h6 {
-    /* font-size: 3rem; */
     font-size: 2vmax;
     font-weight: 200;
-    text-shadow: 2px 2px #95546a;
     width: 100%;
+    text-shadow: 2px 2px #95546a;
 }
 
-.about {
-    color: white;
-}
+/* Section globals */
 
-.about-title {
+.section-header {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-.about-title .title {
     font-size: 7rem;
 }
 
-.about-title h1::after {
+.section-header::after {
     content: "";
     display: block;
-    width: 60%;
+    width:  100%;
     height: .5rem;
     background: #eee;
     outline: 1px solid #000;
 }
 
+.section-sub-header {
+    
+}
+
+/* About me page */
+
 img.profile {
-    border-radius: 50%;
-    height: 50%;
-    width: 50%;
-    margin: 0 5rem;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 40rem;
+    width: 40rem;
+}
+
+.social-bar {
+    margin-top: 5rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #eee;
+    color: #2196f0;
+    border-radius: 30%;
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+}
+
+.btn i{
+    transition: 200ms linear;
+    line-height: 30px;
+    font-size: 15px;;
+}
+
+.btn:hover i {
+    color: #2196f0;
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 600px) {
+    img.profile {
+        display:none;
+    }
+    .about-header {
+        font-size: 5rem;
+    }
+
 }
 

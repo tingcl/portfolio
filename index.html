@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jerry Lu</title>
     <!-- Font Awesome -->
-    <script src="https://use.fontawesome.com/3f8fb3779e.js"></script>    
+    <script src="https://use.fontawesome.com/3f8fb3779e.js"></script>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -19,7 +19,7 @@
     <script src="assets/js/main.js"></script>
 </head>
 <body>
-    <header>
+    <header class="default">
         <div class="container-fluid">
             <div class="menu-hamburger">
                 <div class="menu-line half start"></div>
@@ -47,20 +47,17 @@
                     </ul>
                 </nav>
             </div>
-            <div class="landing-text default">
+            <div class="landing-text">
                 <h1>Jerry Lu</h1>
                 <h6>HTML / CSS / JavaScript</h6>
             </div>
         </div>
     </header>
-    <section class="about" id="about">
+    <section class="about default" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-1"></div>
-                <div class="col-6">
-                    <div class="about-title">
-                        <h1 class="title">About Me</h1>
-                    </div>
+                <div class="col-7">
+                    <h1 class="section-header">About Me</h1>
                     <p> 
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Necessitatibus fugiat unde dolorum illo, aspernatur quaerat 
@@ -68,76 +65,73 @@
                         perspiciatis ipsam tempore fugit nulla mollitia! Consequatur 
                         dolorum tempore labore rem laudantium et dolor asperiores adipisci eos!
                     </p>
-                </div>
-                <div class="col-1"></div>
-                <div class="col-4">
-                    <div class="about-img">
-                        <img class="profile" src="assets/images/me.jpg" alt="profile">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-10">
                     <div class="social-bar">
                         <ul class="nav">
-                            <li class="nav-item linkedin">
-                                <a href="https://www.linkedin.com/in/tingcl/" target="_blank">
-                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            <li class="nav-item">
+                                <a class="btn" href="https://www.linkedin.com/in/tingcl/" target="_blank">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
                                 </a>
                             </li>
-                            <li class="nav-item github">
-                                <a href="https://www.github.com/tingcl" target="_blank">
-                                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                            <li class="nav-item">
+                                <a class="btn" href="https://www.github.com/tingcl" target="_blank">
+                                    <i class="fa fa-github-alt" aria-hidden="true"></i>
                                 </a>
                             </li>
-                            <li class="nav-item twitter">
-                                <a href="https://www.twitter.com/AboLunatic" target="_blank">
-                                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                            <li class="nav-item">
+                                <a class="btn" href="https://www.twitter.com/AboLunatic" target="_blank">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="about-body default">
+                <div class="col-1"></div>
+                <div class="col-4">
+                    <img class="profile" src="assets/images/me.jpg" alt="profile">
+                </div>
             </div>
         </div>
     </section>
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio default" id="portfolio">
         <div class="container">
-            <div class="section-head">
-                <h1>Portfolio</h1>
-                <h6>Finished</h6>
-            </div>
-            <div class="portfolio-item">
-                <div class="portfolio-image">
-                    <img src="assets/images/stock.jpg" alt="search engine project">
-                </div>
-                <div class="section-body">
-                    <h1>Small Search Engine</h1>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Necessitatibus fugiat unde dolorum illo, aspernatur quaerat 
-                        adipisci laborum facilis voluptas repellendus beatae nemo doloribus 
-                        perspiciatis ipsam tempore fugit nulla mollitia! Consequatur 
-                        dolorum tempore labore rem laudantium et dolor asperiores adipisci eos!
-                    </p>
+            <div class="row">
+                <div class="col">
+                    <h1 class="section-header">Portfolio</h1>
+                    <h6 class="section-sub-header">Finished</h6>
                 </div>
             </div>
-            <div class="portfolio-item">
-                <div class="section-body">
-                    <h1>Movie Renting Website</h1>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Necessitatibus fugiat unde dolorum illo, aspernatur quaerat 
-                        adipisci laborum facilis voluptas repellendus beatae nemo doloribus 
-                        perspiciatis ipsam tempore fugit nulla mollitia! Consequatur 
-                        dolorum tempore labore rem laudantium et dolor asperiores adipisci eos!
-                    </p>
-                </div>
-                <div class="portfolio-image">
-                    <img src="assets/images/stock.jpg" alt="movie renting site">
+            <div class="row">
+                <div class="col">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="assets/images/stock.jpg" alt="search engine project">
+                        </div>
+                        <div class="section-body">
+                            <h1>Small Search Engine</h1>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Necessitatibus fugiat unde dolorum illo, aspernatur quaerat 
+                                adipisci laborum facilis voluptas repellendus beatae nemo doloribus 
+                                perspiciatis ipsam tempore fugit nulla mollitia! Consequatur 
+                                dolorum tempore labore rem laudantium et dolor asperiores adipisci eos!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="section-body">
+                            <h1>Movie Renting Website</h1>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Necessitatibus fugiat unde dolorum illo, aspernatur quaerat 
+                                adipisci laborum facilis voluptas repellendus beatae nemo doloribus 
+                                perspiciatis ipsam tempore fugit nulla mollitia! Consequatur 
+                                dolorum tempore labore rem laudantium et dolor asperiores adipisci eos!
+                            </p>
+                        </div>
+                        <div class="portfolio-image">
+                            <img src="assets/images/stock.jpg" alt="movie renting site">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="section-head">

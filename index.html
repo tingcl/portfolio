@@ -11,7 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- Libraries-->
+    <!-- External Libraries-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
@@ -19,44 +19,44 @@
     <script src="assets/js/main.js"></script>
 </head>
 <body>
-    <header class="default">
+    <header>
         <div class="container-fluid">
             <div class="menu-hamburger">
-                <div class="menu-line half start"></div>
+                <div class="menu-line start"></div>
                 <div class="menu-line middle"></div>
-                <div class="menu-line half end"></div>
+                <div class="menu-line end"></div>
             </div>
             <div class="row">
                 <nav class="navbar navbar-expand-lg">
                     <ul class="navbar-nav">
                         <li class="nav-item contents">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link nav-text" href="index.html">Home</a>
                         </li>
                         <li class="nav-item contents">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link nav-text" href="#about">About</a>
                         </li>
                         <li class="nav-item contents">
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                            <a class="nav-link nav-text" href="#portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item contents">
-                            <a class="nav-link" href="#experience">Experience</a>
+                            <a class="nav-link nav-text" href="#experience">Experience</a>
                         </li>
                         <li class="nav-item contents">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link nav-text" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-            <div class="landing-text">
+            <div class="landing-text landing-header">
                 <h1>Jerry Lu</h1>
                 <h6>HTML / CSS / JavaScript</h6>
             </div>
         </div>
     </header>
-    <section class="about default" id="about">
+    <section class="about text" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-7">
+                <div class="col-sm-7 col-md-7 col-lg-7">
                     <h1 class="section-header">About Me</h1>
                     <p> 
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -65,81 +65,73 @@
                         perspiciatis ipsam tempore fugit nulla mollitia! Consequatur 
                         dolorum tempore labore rem laudantium et dolor asperiores adipisci eos!
                     </p>
-                    <div class="social-bar">
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a class="btn" href="https://www.linkedin.com/in/tingcl/" target="_blank">
-                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn" href="https://www.github.com/tingcl" target="_blank">
-                                    <i class="fa fa-github-alt" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn" href="https://www.twitter.com/AboLunatic" target="_blank">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul class="social-bar">
+                        <li>
+                            <a class="btn" href="https://www.linkedin.com/in/tingcl/" target="_blank">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn" href="https://www.github.com/tingcl" target="_blank">
+                                <i class="fa fa-github-alt" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn" href="https://www.twitter.com/AboLunatic" target="_blank">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-1"></div>
-                <div class="col-4">
-                    <img class="profile" src="assets/images/me.jpg" alt="profile">
+                <div class="col-sm-1 col-md-1 col-lg-1"><!-- Fill --></div> 
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <img class="showcase profile" src="assets/images/me.jpg" loading="lazy" alt="profile">
                 </div>
             </div>
         </div>
     </section>
-    <section class="portfolio default" id="portfolio">
+    <section class="portfolio text" id="portfolio">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-sm-12 col-md-7 col-lg-7">
                     <h1 class="section-header">Portfolio</h1>
-                    <h6 class="section-sub-header">Finished</h6>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <img src="assets/images/stock.jpg" alt="search engine project">
-                        </div>
-                        <div class="section-body">
-                            <h1>Small Search Engine</h1>
-                            <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Necessitatibus fugiat unde dolorum illo, aspernatur quaerat 
-                                adipisci laborum facilis voluptas repellendus beatae nemo doloribus 
-                                perspiciatis ipsam tempore fugit nulla mollitia! Consequatur 
-                                dolorum tempore labore rem laudantium et dolor asperiores adipisci eos!
-                            </p>
-                        </div>
-                    </div>
-                    <div class="portfolio-item">
-                        <div class="section-body">
-                            <h1>Movie Renting Website</h1>
-                            <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Necessitatibus fugiat unde dolorum illo, aspernatur quaerat 
-                                adipisci laborum facilis voluptas repellendus beatae nemo doloribus 
-                                perspiciatis ipsam tempore fugit nulla mollitia! Consequatur 
-                                dolorum tempore labore rem laudantium et dolor asperiores adipisci eos!
-                            </p>
-                        </div>
-                        <div class="portfolio-image">
-                            <img src="assets/images/stock.jpg" alt="movie renting site">
-                        </div>
-                    </div>
+            <div class="portfolio-item row">
+                <div class="col-sm-0 col-md-4 col-lg-4  portfolio-image">
+                    <img class="showcase" src="assets/images/stock.jpg" loading="lazy" alt="search engine project">
+                </div>
+                <div class="col-sm-0 col-md-1 col-lg-1"></div>
+                <div class="col-sm-12 col-md-7 col-lg-7 section-body">
+                    <h1 class="sub-header">Small Search Engine</h1>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Necessitatibus fugiat unde dolorum illo, aspernatur quaerat 
+                        adipisci laborum facilis voluptas repellendus beatae nemo doloribus 
+                        perspiciatis ipsam tempore fugit nulla mollitia! Consequatur 
+                        dolorum tempore labore rem laudantium et dolor asperiores adipisci eos!
+                    </p>
                 </div>
             </div>
-            <div class="section-head">
-                <h6>In Progress</h6>
+            <div class="row portfolio-item">
+                <div class="col-sm-12 col-md-7 col-lg-7 section-body">
+                    <h1 class="sub-header">Movie Renting Website</h1>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Necessitatibus fugiat unde dolorum illo, aspernatur quaerat 
+                        adipisci laborum facilis voluptas repellendus beatae nemo doloribus 
+                        perspiciatis ipsam tempore fugit nulla mollitia! Consequatur 
+                        dolorum tempore labore rem laudantium et dolor asperiores adipisci eos!
+                    </p>
+                </div>
+                <div class="col-sm-0 col-md-1 col-lg-1"></div>
+                <div class="col-sm-0 col-md-4 col-lg-4 portfolio-image">
+                    <img class="showcase" src="assets/images/stock.jpg" loading="lazy" alt="movie renting site">
+                </div>
             </div>
             <div class="portfolio-item">
                 <div class="portfolio-image">
-                    <img src="assets/images/drone.jpg" alt="drone kit">
+                    <img src="assets/images/drone.jpg" loading="lazy" alt="drone">
                 </div>
                 <div class="section-body">
                     <h1>Drone Facial Recognition</h1>
@@ -164,14 +156,14 @@
                     </p>
                 </div>
                 <div class="portfolio-image">
-                    <img src="assets/images/calendar.png" alt="calendar website">
+                    <img src="assets/images/calendar.png" loading="lazy" alt="calendar website">
                 </div>
             </div>
         </div>
     </section>
-    <section class="experience" id="experience">
+    <section class="experience text" id="experience">
         <div class="container">
-            <div class="section-head">
+            <div class="section-header">
                 <h1>Experience</h1>
             </div>
             <div class="timeline">
@@ -200,8 +192,8 @@
             </div>
         </div>
     </section>
-    <section class="contact" id="contact">
-        <div class="section-head">
+    <section class="contact text" id="contact">
+        <div class="section-header">
             <h1>Contact</h1>
             <h6>Get in touch with me</h6>
         </div>

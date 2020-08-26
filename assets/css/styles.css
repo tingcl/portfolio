@@ -326,6 +326,14 @@ section {
         width: 40px;
         height: 4px;
     }
+
+    .open .menu-line.start {
+        width: 75%;
+    }
+    
+    .open .menu-line.end {
+        width: 75%;
+    }
     
     /* Landing */
 
@@ -349,8 +357,8 @@ section {
 
     /* Portfolio page */
 
-    section + section{
-        margin-bottom: 4.5rem;
+    img {
+        display: none;
     }
 
 }

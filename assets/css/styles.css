@@ -38,7 +38,7 @@ header {
 }
 
 section {
-    margin: 5rem;
+    margin: 17rem 5rem;
 }
 
 /* Global */
@@ -214,7 +214,7 @@ section {
 .landing-text h1 {
     width: 100%;
     font-size: 20rem;
-    padding: .1em;
+    padding: .1rem;
     text-shadow: 4.5px 4.5px 2.5px #95546a;
 }
 
@@ -228,12 +228,12 @@ section {
 /* About page */
 
 .about h1{
-    margin-top: 4.5rem;
+    margin-top: 1.75rem;
 }
 
 .social-bar{
     list-style: none;
-    margin-left: 12rem;
+    margin: 0 0  3rem 12rem;
 }
 
 .social-bar > li{
@@ -262,8 +262,15 @@ section {
     transform: scale(1.5);
 }
 
-/* About page */
+/* Portfolio page */
 
+.portfolio h1.sub-header{
+    margin-top: 9rem;
+}
+
+.calendar {
+    border-radius: 1rem;
+}
 
 /* Responsiveness */
 
@@ -287,23 +294,63 @@ section {
 }
 
 @media (max-width: 575.98px) {
+     /* Global */
+    .section-header {
+        font-size: 5rem;
+        margin: 0 0 3rem 0;
+    }
+
+    .showcase{
+        height: 22rem;
+        width: 22rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    /* Navbar */
+
+    .nav-item {
+        font-size: 3rem;
+        margin: 1rem 0;
+    }
+
+    /* Hamburger */
+
+    .menu-hamburger {
+        height: 3rem; 
+    }
+    
+    .menu-line {
+        width: 40px;
+        height: 4px;
+    }
+    
+    /* Landing */
+
     .landing-text > h1 {
         font-size: 7rem;
     }
     .landing-text > h6 {
         font-size: 2rem;
     }
-    .section-header {
-        font-size: 4.5rem;
-        padding-left: 1rem;
-        padding-bottom: 1.5rem;
+
+    /* About */
+
+    .social-bar{
+        margin-left: 0;
     }
-    .social-bar {
-        padding-left: 0;
-        padding-bottom: 1.5rem;
+    
+    .social-bar > li{
+        display: inline;
+        margin-right: 2rem;
     }
-    .showcase{
-        height: 22rem;
-        width: 22rem;
+
+    /* Portfolio page */
+
+    section + section{
+        margin-bottom: 4.5rem;
     }
+
 }

@@ -238,22 +238,26 @@
         </div>
     </section>
     <section class="contact base-text" id="contact">
-        <div>
-            <h1 class="section-header">Contact</h1>
-            <h6 class="sub-header">Get in touch with me</h6>
+        <div class="container">
+            <div>
+                <h1 class="section-header-centered">Contact</h1>
+                <h6 class="sub-header-centered">Get in touch with me</h6>
+            </div>
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+                <label for="name">Subject</label>
+                <textarea name="subject" id="subject" cols="30" rows="10"></textarea>
+                <input type="submit" value="submit">
+            </form>
         </div>
-        <form action="">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" required>
-            <label for="name">Subject</label>
-            <textarea name="subject" id="subject" cols="30" rows="10"></textarea>
-            <input type="submit" value="submit">
-        </form>
     </section>
     <footer class="base-text">
-        <p>Jerry Lu © 2020</p>   
+        <div class="container">
+            <p>Jerry Lu © 2020</p>   
+        </div>
     </footer>
 </body>
 </html>

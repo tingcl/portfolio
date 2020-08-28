@@ -155,6 +155,11 @@ section {
     border-radius: initial;
 }
 
+body.open {
+    height: 100%;
+    overflow-y: hidden;
+}
+
 .nav-item::after {
     content: '';
     display: block;

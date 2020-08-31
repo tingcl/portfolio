@@ -305,12 +305,15 @@ body.open {
 /* portfolio page */
 
 .portfolio-item{
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
 }
 
-.portfolio h1.sub-header{
-    /* margin-top: 9rem; */
+/* .portfolio h1.sub-header{
     margin-top: 5vw;
+} */
+
+.section-body ul{
+    margin-top: 3vw;
 }
 
 /* Experience */

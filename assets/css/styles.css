@@ -23,8 +23,8 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-
+li{
+    font-size: 1.75rem;
 }
 
 p {
@@ -47,7 +47,7 @@ section {
     margin: 17rem 5rem;
 }
 
-/* reused classes */
+/* reused */
 
 .base-text {
     font-family: 'Josefin Sans', sans-serif;

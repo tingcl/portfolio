@@ -406,6 +406,16 @@ form label{
     font-size: 2rem;
 }
 
+form input[type="text"]{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+form textarea{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
 input, select, textarea {
     width: 100%;
     padding: 1rem;
@@ -422,6 +432,10 @@ input[type="submit"] {
     padding: 1rem 3rem;
     border: none; 
     cursor: pointer;
+}
+
+iframe {
+    display: none;
 }
 
 

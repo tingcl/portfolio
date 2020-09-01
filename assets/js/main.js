@@ -1,7 +1,5 @@
-var submitted = false;
-
 $(document).ready(function(){
-    $('.menu-hamburger').on('click', function(){
+    $('.menu').on('click', function(){
         $(this).toggleClass('open');
         $('.navbar').toggleClass('open');
         $('body').toggleClass('open');
@@ -16,13 +14,8 @@ $(document).ready(function(){
             scrollTop: $($(this).attr('href')).offset().top
         }, 1000);
     });
-    $('#gform').on('submit', function(){
-        alert("Response submitted!");
-        setTimeout(function() { $("#gform")[0].reset(); }, 100);
-    });
     AOS.init({
         easing: 'ease',
         duration: 2000
     });
-
 });

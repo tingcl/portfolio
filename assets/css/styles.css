@@ -550,11 +550,11 @@ iframe {
         height: 4px;
     }
 
-    .open .menu-line.start {
+    .open .menu-line.top {
         width: 75%;
     }
     
-    .open .menu-line.end {
+    .open .menu-line.bottom {
         width: 75%;
     }
     

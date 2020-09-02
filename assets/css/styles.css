@@ -427,6 +427,11 @@ iframe {
 
 
 @media (max-width: 767.98px) {
+    /* Global */
+
+    section {
+        margin: 15rem 4rem;
+    }
 
     /* Landing */
 
@@ -502,6 +507,10 @@ iframe {
 
 @media (max-width: 575.98px) {
      /* Global */
+
+    section {
+        margin: 9rem 3rem;
+    }
 
     p {
         font-size: 1.6rem;

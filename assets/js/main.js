@@ -3,9 +3,10 @@ $(document).ready(function(){
         $(this).toggleClass('open');
         $('.navbar').toggleClass('open');
         $('body').toggleClass('open');
+        console.log("toggle")
     });
-    $('.navbar .nav-link').on('click', function(){
-        $('.menu-hamburger').removeClass('open');
+    $('.nav-link').on('click', function(){
+        $('.menu').removeClass('open');
         $('.navbar').removeClass('open');
         $('body').removeClass('open');
     });

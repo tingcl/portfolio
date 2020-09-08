@@ -22,6 +22,14 @@ $(document).ready(function(){
             $('#img-4').attr('data-aos', '');
         }
     })
+    $(window).on('resize', function() {
+        if($(window).width() > 575.98) {
+            $('#img-1').attr('data-aos', 'fade-left');
+            $('#img-2').attr('data-aos', 'fade-right');
+            $('#img-3').attr('data-aos', 'fade-left');
+            $('#img-4').attr('data-aos', 'fade-right');
+        }
+    })
     AOS.init({
         easing: 'ease',
         duration: 2000

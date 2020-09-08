@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Josefin+Sans:wght@300;400;700&family=Noticia+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@700&family=Roboto:wght@300;400;900&display=swap');
 
 /* Global */
 
@@ -13,13 +13,11 @@ html {
 }
 
 body {
-    background: url("/assets/images/gradient.jpg") no-repeat center fixed;
+    background: url("/assets/images/nature.jpg") no-repeat center fixed;
     background-size: cover;
     width: 100%;
     height: 100%;
-
-    /* bootstrap conflict in html style */
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 1.75rem;
     color: #FFF;
@@ -59,8 +57,8 @@ section {
 /* Reused Classes */
 
 .header {
-    font-family: 'Crimson Text', serif;
-    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
     font-size: 7rem;
     text-shadow: -1px -1px #000000, 
                  1px -1px #000000, 
@@ -70,8 +68,8 @@ section {
 }
 
 .header-centered {
-    font-family: 'Crimson Text', serif;
-    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
     font-size: 7rem;
     text-shadow: -1px -1px #000000, 
                  1px -1px #000000, 
@@ -79,31 +77,41 @@ section {
                  1px 1px #000000;
     width: 25%;
     margin: 0 auto;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 }
 
 .sub-header {
-    font-family: 'Crimson Text', serif;
-    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-size: 3rem;
     margin-bottom: 3rem;
 }
 
 .sub-header-centered {
-    font-family: 'Crimson Text', serif;
-    font-weight: 600;
-    font-size: 3rem;
-    width: 28%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
     margin: 0 auto;
-    padding-bottom: 3rem;
+    width: 25%;
+    padding: 0 0 3rem 1rem;
+}
+
+.header-centered::after{
+    content: '';
+    display: block;
+    background: #FFF;
+    width: 25rem;
+    height: .3rem;
 }
 
 .showcase {
     width: 100%;
     height: auto;
     border-radius: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
-                0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(32, 51, 84, .2), 
+                0 6px 20px 0 rgba(32, 51, 84, .2);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.2); */
 }
 
 /* Hamburger Menu */
@@ -164,7 +172,7 @@ section {
     top: -100vh;
     width: 100%;
     height: 100vh;
-    background-color: #2051aa;
+    background-color: #00588d;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     transition: 650ms all cubic-bezier(0.8, 0.05, 0.05, 1);
@@ -183,9 +191,9 @@ section {
 }
 
 .navbar-nav a {
-    font-family: 'Crimson Text', serif;
-    font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    font-size: 4rem;
     color: #FFF;
 }
 
@@ -209,7 +217,9 @@ section {
 
 .landing {
     z-index: 1;
-    font-family: 'Noticia Text', serif;
+    /* font-family: 'Noticia Text', serif; */
+    font-family: 'Grandstander', cursive;
+    font-weight: 700;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -223,13 +233,13 @@ section {
 .landing > h1 {
     font-size: 20rem;
     margin-bottom: 1.5rem;
-    text-shadow: 4px 4px 1px #95546a;
+    text-shadow: 4px 4px 1px rgba(255, 123, 123, 0.7);
 }
 
 .landing > h6 {
     font-size: 4rem;
     font-weight: 200;
-    text-shadow: 2px 2px 1px #95546a;
+    text-shadow: 2px 2px 1px rgba(240, 128, 128, .7);
 }
 
 /* About */
@@ -238,6 +248,11 @@ section {
     height: 40rem;
     width: 40rem;
     border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(32, 51, 84, .2), 
+                0 6px 20px 0 rgba(32, 51, 84, .2);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.2); */
+
 }
 
 .about h1 {
@@ -282,6 +297,23 @@ section {
 
 .portfolio-item ul {
     margin-bottom: 3vw;
+}
+
+.portfolio-image .description{
+    position: absolute;
+    top: 0;
+    background: black;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.portfolio-image:hover .description{
+    width: 94%;
+    padding: .8rem 2rem;
+    visibility: visible;
+    opacity: 0.7; 
 }
 
 /* Experience */
@@ -353,7 +385,7 @@ section {
     top: 3rem;
     right: -20rem;
     padding: 1rem;
-    background: rgb(241, 93, 93);
+    background-color: #e92163;
     border-radius: 2rem;
 }
 
@@ -363,7 +395,7 @@ section {
     top: 3rem;
     left: -20rem;
     padding: 1rem;
-    background: rgb(241, 93, 93);
+    background-color: #e92163;
     border-radius: 2rem;
 }
 
@@ -379,12 +411,12 @@ form label{
 }
 
 form input[type="text"] {
-    font-family: 'Crimson Text', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
 }
 
 form textarea{
-    font-family: 'Crimson Text', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
 }
 
@@ -397,7 +429,7 @@ input, select, textarea {
 
 input[type="submit"] {
     width: initial;
-    background-color:rgb(241, 93, 93);;
+    background-color:#e92163;
     color: #FFFFFF;
     font-size: 2rem;
     border-radius: 1rem;
@@ -500,7 +532,7 @@ iframe {
         margin: 0 0 3rem 7vw;
     }
 
-    .header-centered {
+    .sub-header-centered {
         margin: 0 0 3rem 7vw;
     }
 }
@@ -599,5 +631,6 @@ iframe {
         font-size: 2.5rem;
         width: 70%;
         margin: 0 auto;
+        padding-left: 0;
     }
 }

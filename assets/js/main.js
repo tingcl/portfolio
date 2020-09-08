@@ -14,6 +14,14 @@ $(document).ready(function(){
             scrollTop: $($(this).attr('href')).offset().top
         }, 1000);
     });
+    $(window).on('resize', function() {
+        if($(window).width() < 575.98) {
+            $('#img-1').attr('data-aos', '');
+            $('#img-2').attr('data-aos', '');
+            $('#img-3').attr('data-aos', '');
+            $('#img-4').attr('data-aos', '');
+        }
+    })
     AOS.init({
         easing: 'ease',
         duration: 2000
